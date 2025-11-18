@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML Notes</title>
+    <style>
+        :root{--bg:#f7f9fc;--card:#fff;--muted:#6b7280;--accent:#0f62fe}
+        html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#111}
+        .wrap{max-width:1000px;margin:36px auto;padding:20px}
+        header{display:flex;align-items:center;gap:16px}
+        header h1{margin:0;font-size:1.25rem}
+        .grid{display:grid;grid-template-columns:220px 1fr;gap:18px;margin-top:18px}
+        nav{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+        nav a{display:block;color:var(--accent);text-decoration:none;margin:6px 0;font-size:0.95rem}
+        main{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+        section{margin-bottom:18px}
+        h2{margin:0 0 8px 0;font-size:1rem}
+        p{margin:0 0 10px 0;color:var(--muted);font-size:0.95rem}
+        pre{background:#0b1220;color:#e6edf3;padding:12px;border-radius:6px;overflow:auto;font-size:0.9rem}
+        code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+        footer{margin-top:12px;color:var(--muted);font-size:0.85rem}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <rect width="24" height="24" rx="4" fill="#0f62fe"></rect>
+                <text x="12" y="16" text-anchor="middle" font-size="12" fill="#fff" font-family="sans-serif">HTML</text>
+            </svg>
+            <h1>HTML Notes</h1>
+        </header>
+
+        <div class="grid">
+            <nav aria-label="Table of contents">
+                <a href="#intro">Introduction</a>
+                <a href="#structure">Document structure</a>
+                <a href="#elements">Common elements</a>
+                <a href="#attributes">Attributes</a>
+                <a href="#forms">Forms & inputs</a>
+                <a href="#semantic">Semantic HTML</a>
+                <a href="#accessibility">Accessibility</a>
+                <a href="#resources">Resources</a>
+            </nav>
+
+            <main>
+                <section id="intro">
+                    <h2>Introduction</h2>
+                    <p>HTML (HyperText Markup Language) defines the structure of web pages using elements represented by tags.</p>
+                </section>
+
+                <section id="structure">
+                    <h2>Document structure</h2>
+                    <p>Basic HTML document skeleton:</p>
+                    <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+        &lt;title&gt;Page title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- content --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </section>
+
+                <section id="elements">
+                    <h2>Common elements</h2>
+                    <p>Examples of frequently used elements:</p>
+                    <pre><code>&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;Paragraph text with &lt;a href="#"&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;img src="image.jpg" alt="description"&gt;
+&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></pre>
+                </section>
+
+                <section id="attributes">
+                    <h2>Attributes</h2>
+                    <p>Attributes provide additional information for elements. Common attributes: id, class, src, href, alt, title, data-*</p>
+                    <pre><code>&lt;button id="saveBtn" class="primary" data-action="save"&gt;Save&lt;/button&gt;</code></pre>
+                </section>
+
+                <section id="forms">
+                    <h2>Forms & inputs</h2>
+                    <p>Form basics with labels and input types:</p>
+                    <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </section>
+
+                <section id="semantic">
+                    <h2>Semantic HTML</h2>
+                    <p>Use semantic tags for better structure and accessibility: &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt;.</p>
+                </section>
+
+                <section id="accessibility">
+                    <h2>Accessibility</h2>
+                    <p>Basics: provide alt text, associate labels with inputs, use meaningful semantics, ensure keyboard focus, and use ARIA when necessary.</p>
+                </section>
+
+                <section id="resources">
+                    <h2>Resources</h2>
+                    <p>MDN Web Docs and WHATWG HTML Living Standard are authoritative references.</p>
+                </section>
+
+                <footer>
+                    Notes file: /Users/thales/Documents/vscode/Website-Development/Notes.html
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
